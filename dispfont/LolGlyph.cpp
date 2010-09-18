@@ -110,14 +110,8 @@ void UpdateTextFromSerial() {
       disp_len = strlen(disp)*6;
       disp[i] = '\0';
     
-      //WriteText(disp); -- this can give junk at the beginning - no write can give junk, too...
-      ScrollLeft_setup(); // this freezes it for all time!
-      //WriteText(disp);
+      ScrollLeft_setup(); // I, SDC, added this.
   }
-  // need these?
-  // sdc adding.
-
-  //ScrollLeft_setup();
 }
 
 void WriteScrollingText () {
